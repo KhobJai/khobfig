@@ -2,11 +2,11 @@
 ###
 
 #TESTFILE=TEMPFILE
-if [ -Z "$1" ]
-  then
-    echo "writing 1 megabyte to current drive at $pwd for test"
-else
-    echo "writing 1 megabyte to $1 for test"
-    set testfile = $1/tempfile
-echo "Helo World: $testfile"
-#dd if=/dev/zero of=$testfile  bs=1M count=1024; sync
+#IF [ -Z "$1" ]
+#  THEN
+#    ECHO "WRITING 1 MEGABYTE TO CURRENT DRIVE AT $pwd FOR TEST"
+#ELSE
+#    ECHO "wRITING 1 MEGABYTE TO $1 FOR TEST"
+#    SET TESTFILE = $1$TEMPFILE
+
+dd if=/dev/zero of=tempfile bs=1M count=1024; sync
