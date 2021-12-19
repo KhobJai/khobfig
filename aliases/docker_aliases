@@ -1,0 +1,8 @@
+alias startdr="sudo systemctrl start docker"
+alias dr="docker"
+alias "sudr"="sudo docker"
+alias "drim"="docker image" 
+alias "drimls"="docker image ls" 
+alias "drcont"="docker container" 
+
+

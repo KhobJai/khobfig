@@ -1,0 +1,17 @@
+* Khobfig
+
+Place for all of my linux config to make transitioning between distro's as painless as possible!
+
+** Contents
+
+*** Config and Installers
+
+1. Distro/Desktop/Window managment config files and install scripts
+2. Shell (bash/zsh) config and install scripts
+2. application (Emacs) config and install scripts
+3. Hardware+Distro  specific scripts (Raspberry PI + Raspbery PI OS / Ubuntu)
+
+
+Kind Regards,
+
+Khob Jai.
