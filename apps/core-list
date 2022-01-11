@@ -1,0 +1,6 @@
+core:
+	vim
+	nano 
+emacs
+tmux
+qutebrowser
