@@ -1,0 +1,61 @@
+#!/bin/bash
+
+
+# List File Aliases
+
+alias ll="ls -la"
+alias lh="ls -la"
+
+
+# Docker
+dr="docker"
+
+
+git_log_search() { echo "$gl -S$1;"; }
+
+#Systemd
+alias sys="systemctl"
+alias syslist="sys list-units"
+alias sys-services="sys list-units | grep service"
+alias sys-timers="sys list-units | grep timer"
+alias sys-targets="sys list-units | grep target"
+alias sys-sockets="sys list-units | grep socket"
+
+
+#Editors
+alias v="vim"
+alias n="nano"
+alias neo="neofetch"
+
+# Git
+alias g="git"
+alias gs="g status"
+alias gis="git status"
+alias gl="git log"
+alias gc="giit commit"
+alias ga="git add"
+alias glo="gl --oneline"
+alias glg="gl --graph"
+alias glg="gl --pretty"
+alias glse="gl -S"
+alias glgrep="gl --grep"
+
+#CD
+
+alias cdhd="cd /mnt/hdd2t"
+alias cdg="cd $HOME/git"
+alias cd1t="cd /mnt/ssd1t_01"
+alias cd500g="cd /mnt/ssd500g"
+alias cdnv="cd /"
+
+# Docker
+
+alias alchk="echo Aliases V2"
+alias startdr="sudo systemctrl start docker"
+alias dr="docker"
+alias "su-dr"="sudo docker"
+alias "sudr-im"="sudo docker images" 
+alias "dr-imls"="docker image ls" 
+alias "dr-cont"="docker container" 
+
+

@@ -1,0 +1,29 @@
+#!/bin/zsh
+
+
+# Systemd
+stop-sys() { sudo systemctl stop $1.service }
+start-sys() { sudo systemctl start  $1.service }
+restart-sys() { sudo systemctl restart $1.service }
+sys-status() { systemctl status $1 }
+sys-isloaded()  {systemctl daemon-reload}
+
+# Git
+git_log_search() { echo "$gl -S$1;"; }
+
+
+# Netstat/Port Grep
+
+netgrep() {sudo netstat -tulpn | grep :$1}
+psgrep() { ps -ef | grep $1 }
+
+
+# Docker
+
+dr-contlogs() {sudo docker logs $1}
+dr-bash() {sudo docker exec -it $1 bash}
+dr-inspect() {sudo docker inspect $1}
+dr-start() {sudo docker start $1}
+dr-stop() {sudo docker stop $1}
+dr-restart() {sudo docker restart $1}
+dr-delete() {sudo docker rm  $1}
