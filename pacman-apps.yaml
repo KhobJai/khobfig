@@ -1,0 +1,27 @@
+apt:
+  dstros: [ "debian","mint","ubuntu" ]
+  search: "search"
+  update: "update"
+  install: "install"
+  upgrade: "upgrade"
+  remove: "remove"
+pacman:  
+  distros: ["arch","manjaro"]
+  search "-Ss"
+  install: "install"
+  update "-Syu"
+  upgrade: "-Syyyu"
+  remove: "-Rns"
+yay:  
+  distros: ["arch","manjaro"]
+  search "-Ss"
+  install: "install"
+  update "-Syu"
+  upgrade: "-Syyyu"
+  remove: "-Rns"
+pkg:
+  distros: ["tmux"]
+  search: "search"
+  install: "install"
+  update: "update"
+  upgrade: "upgrade"
